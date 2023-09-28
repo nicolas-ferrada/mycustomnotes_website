@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mycustomnotes_website/routes/routes.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class StaticNavigationAppBarWidget extends StatelessWidget {
   final Widget child;
@@ -62,7 +63,9 @@ class StaticNavigationAppBarWidget extends StatelessWidget {
       Padding(
         padding: const EdgeInsets.all(8.0),
         child: InkWell(
-          onTap: () {},
+          onTap: () async {
+            launchUrl(Uri.parse('https://nicolasferrada.com'));
+          },
           child: const Text('Developer'),
         ),
       ),
