@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:mycustomnotes_website/routes/routes.dart';
+import '../routes/routes.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class StaticNavigationAppBarWidget extends StatelessWidget {

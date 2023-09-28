@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:mycustomnotes_website/routes/routes.dart';
+import 'routes.dart';
 
 class RouteErrorPage extends StatelessWidget {
   const RouteErrorPage({super.key});

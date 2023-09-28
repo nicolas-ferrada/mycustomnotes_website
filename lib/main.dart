@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:go_router/go_router.dart';
-import 'package:mycustomnotes_website/routes/routes.dart';
+import 'routes/routes.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
