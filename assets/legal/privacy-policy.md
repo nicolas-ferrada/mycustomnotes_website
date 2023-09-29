@@ -47,7 +47,7 @@ While using Our Service, We may ask You to provide Us with certain personally id
 
 - Email address
 
-- Data Usage
+- Usage Data
 
 **Usage Data**
 
