@@ -55,6 +55,15 @@ class StaticNavigationAppBarWidget extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: InkWell(
           onTap: () {
+            context.go(accountDeleteRoute);
+          },
+          child: const Text('Account delete'),
+        ),
+      ),
+      Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: InkWell(
+          onTap: () {
             context.go(contactRoute);
           },
           child: const Text('Contact'),

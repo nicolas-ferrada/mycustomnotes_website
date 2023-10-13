@@ -68,7 +68,8 @@ flutter:
   assets:
     - assets/legal/privacy-policy.md
     - assets/legal/terms-of-service.md
-  #   - images/a_dot_ham.jpeg
+    - assets/account_delete/account-delete.md
+    - assets/account_delete/account_delete_images/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
