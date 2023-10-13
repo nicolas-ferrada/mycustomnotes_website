@@ -20,7 +20,7 @@ class MarkdownFiles extends StatelessWidget {
             data: snapshot.data!,
             styleSheet: markdownStyle(),
             selectable: true,
-            padding: const EdgeInsets.symmetric(horizontal: 500, vertical: 64),
+            padding: const EdgeInsets.symmetric(horizontal: 128, vertical: 64),
             onTapLink: (text, url, title) {
               if (url != null) {
                 launchUrl(Uri.parse(url));
