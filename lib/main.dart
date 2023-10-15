@@ -26,8 +26,8 @@ class MyApp extends StatelessWidget {
       routerConfig: router,
       theme: ThemeData(
         useMaterial3: true,
-        colorScheme: ColorScheme.dark(
-          background: Colors.grey.shade900,
+        colorScheme: const ColorScheme.dark(
+          background: Color(0xFF212121),
           primary: Colors.white60,
         ),
       ),
