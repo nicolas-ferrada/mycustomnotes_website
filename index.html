@@ -34,26 +34,52 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "719430332";
+    const serviceWorkerVersion = "833348211";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
 <body>
+  <style>
+    body {
+      background-color: #212121;
+      height: 100vh;
+      width: 100vw;
+      margin: 0px;
+    }
+
+    .main-content {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity .4s ease-out;
+    }
+  </style>
   <script>
+    function delay(time){
+      return new Promise(resolve => setTimeout(resolve, time));
+    }
     window.addEventListener('load', function(ev) {
+      var loaderContent = document.querySelector('#loader-content');
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         },
         onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
+          engineInitializer.initializeEngine().then(async function(appRunner) {
+            loaderContent.style.opacity = "0";
+            await delay(400);
             appRunner.runApp();
           });
         }
       });
     });
   </script>
+  <div class="main-content" id="loader-content">
+    <img src="loading-screen-logo.png" alt="My Custom Notes">
+  </div>
 </body>
 </html>
