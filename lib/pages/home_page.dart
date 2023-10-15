@@ -12,9 +12,13 @@ class _HomePageState extends State<HomePage> {
     return const Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
+        children: [
           Text(
-            'Home page',
+            'My Custom Notes',
+            style: TextStyle(
+              fontSize: 32,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ],
       ),
