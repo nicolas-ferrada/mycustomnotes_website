@@ -1,11 +1,11 @@
 {
-    "name": "mycustomnotes_website",
-    "short_name": "mycustomnotes_website",
+    "name": "My Custom Notes",
+    "short_name": "My Custom Notes",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Organize your day and save your favorite moments in one place with My Custom Notes, a mobile application for note-taking and task organization. Available for Android and iOS.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
