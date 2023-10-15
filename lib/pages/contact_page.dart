@@ -15,62 +15,58 @@ class ContactPage extends StatelessWidget {
   }
 
   Widget bodyPage() {
-    return const Expanded(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            'Contact information',
-            style: TextStyle(
-              fontSize: 28,
-              fontWeight: FontWeight.bold,
-            ),
+    return const Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          'Contact information',
+          style: TextStyle(
+            fontSize: 28,
+            fontWeight: FontWeight.bold,
           ),
-          SizedBox(
-            height: 8,
+        ),
+        SizedBox(
+          height: 8,
+        ),
+        Text(
+          'Owner and data controller',
+          style: TextStyle(
+            fontSize: 16,
           ),
-          Text(
-            'Owner and data controller',
-            style: TextStyle(
-              fontSize: 16,
-            ),
+        ),
+        Text(
+          'Name: Nicolás Ferrada',
+          style: TextStyle(
+            fontSize: 16,
           ),
-          Text(
-            'Name: Nicolás Ferrada',
-            style: TextStyle(
-              fontSize: 16,
-            ),
+        ),
+        SelectableText(
+          'Email: mycustomnotes@nicolasferrada.com',
+          style: TextStyle(
+            fontSize: 16,
           ),
-          SelectableText(
-            'Email: mycustomnotes@nicolasferrada.com',
-            style: TextStyle(
-              fontSize: 16,
-            ),
+        ),
+        SizedBox(height: 16),
+        Text(
+          'If you have any questions, you can contact us by email.',
+          style: TextStyle(
+            fontSize: 16,
           ),
-          SizedBox(height: 16),
-          Text(
-            'If you have any questions, you can contact us by email.',
-            style: TextStyle(
-              fontSize: 16,
-            ),
-          ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 
   Widget titlePage() {
     return const Padding(
       padding: EdgeInsets.all(12),
-      child: Expanded(
-        child: Align(
-          alignment: Alignment.topCenter,
-          child: Text(
-            'Contact us',
-            style: TextStyle(
-              fontSize: 32,
-              fontWeight: FontWeight.bold,
-            ),
+      child: Align(
+        alignment: Alignment.topCenter,
+        child: Text(
+          'Contact us',
+          style: TextStyle(
+            fontSize: 32,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),
