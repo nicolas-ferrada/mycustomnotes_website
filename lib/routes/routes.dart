@@ -1,7 +1,7 @@
 import 'package:go_router/go_router.dart';
 import 'package:mycustomnotes_website/pages/account_delete.dart';
 import '../pages/contact_page.dart';
-import '../pages/home_page.dart';
+import '../pages/home_page/home_page.dart';
 import '../pages/privacy_policy_page.dart';
 import '../pages/terms_of_service_page.dart';
 import 'route_error_page.dart';

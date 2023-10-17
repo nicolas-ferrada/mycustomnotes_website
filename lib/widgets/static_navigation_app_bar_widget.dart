@@ -15,7 +15,14 @@ class StaticNavigationAppBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('My Custom Notes'),
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        toolbarHeight: 220,
+        titleSpacing: 180,
+        title: Image.asset(
+          'assets/images/logo-letters.png',
+          fit: BoxFit.contain,
+        ),
         actions: appBarActions(context),
       ),
       body: child,
@@ -24,63 +31,61 @@ class StaticNavigationAppBarWidget extends StatelessWidget {
 
   List<Widget>? appBarActions(BuildContext context) {
     return [
-      Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: InkWell(
-          onTap: () {
-            context.go(homePageRoute);
-          },
-          child: const Text('Home'),
-        ),
+      AppBarItem(
+        text: 'Home',
+        function: () => context.go(homePageRoute),
       ),
-      Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: InkWell(
-          onTap: () {
-            context.go(termsOfServiceRoute);
-          },
-          child: const Text('Terms of Service'),
-        ),
+      AppBarItem(
+        text: 'Terms of service',
+        function: () => context.go(termsOfServiceRoute),
       ),
-      Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: InkWell(
-          onTap: () {
-            context.go(privacyPolicyRoute);
-          },
-          child: const Text('Privacy Policy'),
-        ),
+      AppBarItem(
+        text: 'Privacy policy',
+        function: () => context.go(privacyPolicyRoute),
       ),
-      Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: InkWell(
-          onTap: () {
-            context.go(accountDeleteRoute);
-          },
-          child: const Text('Account delete'),
-        ),
+      AppBarItem(
+        text: 'Account delete',
+        function: () => context.go(accountDeleteRoute),
       ),
-      Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: InkWell(
-          onTap: () {
-            context.go(contactRoute);
-          },
-          child: const Text('Contact'),
-        ),
+      AppBarItem(
+        text: 'Contact',
+        function: () => context.go(contactRoute),
       ),
-      Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: InkWell(
-          onTap: () async {
-            launchUrl(Uri.parse('https://nicolasferrada.com'));
-          },
-          child: const Text('Developer'),
-        ),
+      AppBarItem(
+        text: 'Developer',
+        function: () async =>
+            await launchUrl(Uri.parse('https://nicolasferrada.com')),
       ),
       const SizedBox(
         width: 64,
-      )
+      ),
     ];
+  }
+}
+
+class AppBarItem extends StatelessWidget {
+  final String text;
+  final Function() function;
+  const AppBarItem({
+    super.key,
+    required this.text,
+    required this.function,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 8),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(20),
+        onTap: function,
+        child: Text(
+          text,
+          style: const TextStyle(
+            fontSize: 24,
+          ),
+        ),
+      ),
+    );
   }
 }
