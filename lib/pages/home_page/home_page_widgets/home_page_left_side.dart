@@ -14,7 +14,7 @@ class HomePageLeftSide extends StatelessWidget {
         bodyText(),
         const SizedBox(height: 32),
         storeButtons(),
-        const SizedBox(height: 128),
+        const SizedBox(height: 32),
       ],
     );
   }
@@ -25,8 +25,11 @@ class HomePageLeftSide extends StatelessWidget {
       children: [
         Text(
           'Organize your day',
-          style:
-              TextStyle(fontSize: 72, fontWeight: FontWeight.bold, height: 0),
+          style: TextStyle(
+            fontSize: 88,
+            fontWeight: FontWeight.w900,
+            height: 0,
+          ),
         ),
         Text(
           'and save your favorite moments in one place!',

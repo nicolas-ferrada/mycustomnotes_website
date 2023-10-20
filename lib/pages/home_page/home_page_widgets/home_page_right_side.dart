@@ -8,10 +8,25 @@ class HomePageRightSide extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        images(),
+        const SizedBox(height: 64),
+      ],
+    );
+  }
+
+  Widget images() {
+    return Row(
+      children: [
         Image.asset(
-          'assets/images/phones.png',
+          'assets/images/small-view.jpg',
           fit: BoxFit.cover,
-          width: 800,
+          height: 600,
+        ),
+        const SizedBox(width: 32),
+        Image.asset(
+          'assets/images/split-view.jpg',
+          fit: BoxFit.cover,
+          height: 600,
         ),
       ],
     );
