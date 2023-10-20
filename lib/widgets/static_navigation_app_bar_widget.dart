@@ -17,7 +17,7 @@ class StaticNavigationAppBarWidget extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
-        toolbarHeight: 220,
+        toolbarHeight: 160,
         titleSpacing: 180,
         title: Image.asset(
           'assets/images/logo-letters.png',
