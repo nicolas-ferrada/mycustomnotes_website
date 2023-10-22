@@ -7,8 +7,8 @@ class ContactPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: SizedBox(
-        height: 220,
-        width: 460,
+        height: 275,
+        width: 400,
         child: Card(
           color: const Color(0xFF322D40),
           child: Padding(
@@ -43,23 +43,19 @@ class ContactPage extends StatelessWidget {
     return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        Text('Name:'),
         SelectableText(
-          'Name: Nicolás Ferrada',
-          style: TextStyle(
-            fontSize: 18,
-          ),
+          'Nicolás Ferrada',
         ),
+        SizedBox(height: 16),
+        Text('Email:'),
         SelectableText(
-          'Email: mycustomnotes@nicolasferrada.com',
-          style: TextStyle(
-            fontSize: 18,
-          ),
+          'mycustomnotes@nicolasferrada.com',
         ),
         SizedBox(height: 32),
         Text(
-          'If you have any questions, you can contact us by email.',
+          'If you have any questions, contact us by email.',
           style: TextStyle(
-            fontSize: 16,
             fontStyle: FontStyle.italic,
           ),
         ),
