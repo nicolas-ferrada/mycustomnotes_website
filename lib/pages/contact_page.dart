@@ -8,7 +8,7 @@ class ContactPage extends StatelessWidget {
     return Center(
       child: SizedBox(
         height: 220,
-        width: 500,
+        width: 460,
         child: Card(
           color: const Color(0xFF322D40),
           child: Padding(
