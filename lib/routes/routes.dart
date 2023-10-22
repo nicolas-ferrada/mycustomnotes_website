@@ -5,7 +5,7 @@ import '../pages/home_page/home_page.dart';
 import '../pages/privacy_policy_page.dart';
 import '../pages/terms_of_service_page.dart';
 import 'route_error_page.dart';
-import '../widgets/static_navigation_app_bar_widget.dart';
+import '../widgets/static_appbar/static_appbar.dart';
 
 const String homePageRoute = '/';
 const String privacyPolicyRoute = '/privacy-policy';
@@ -19,8 +19,7 @@ class AppRoutes {
     errorBuilder: (context, state) => const RouteErrorPage(),
     routes: [
       ShellRoute(
-        builder: (context, _, child) =>
-            StaticNavigationAppBarWidget(child: child),
+        builder: (context, _, child) => StaticAppbar(child: child),
         routes: [
           GoRoute(
             path: homePageRoute,
@@ -53,7 +52,7 @@ class AppRoutes {
             ),
           ),
         ],
-      )
+      ),
     ],
   );
 }

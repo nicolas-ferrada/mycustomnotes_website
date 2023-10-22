@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
       builder: (BuildContext context, BoxConstraints constraints) {
         if (constraints.maxWidth < 700) {
           return mobileHomePage();
-        } else if (constraints.maxWidth < 1400) {
+        } else if (constraints.maxWidth < 1500) {
           return tabletHomePage();
         } else {
           return desktopHomePage();
