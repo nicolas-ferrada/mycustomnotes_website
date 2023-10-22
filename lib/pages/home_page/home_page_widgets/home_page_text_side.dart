@@ -1,63 +1,77 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class HomePageLeftSide extends StatelessWidget {
-  const HomePageLeftSide({super.key});
+class HomePageTextSide extends StatelessWidget {
+  final double titleFontSize;
+  final double subtitleFontSize;
+  final double bodyFontSize;
+  const HomePageTextSide({
+    super.key,
+    required this.bodyFontSize,
+    required this.subtitleFontSize,
+    required this.titleFontSize,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        titleText(),
-        const SizedBox(height: 32),
-        bodyText(),
-        const SizedBox(height: 32),
-        storeButtons(),
-        const SizedBox(height: 32),
-      ],
+    return Padding(
+      padding: const EdgeInsets.all(12),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          titleText(),
+          const SizedBox(height: 32),
+          bodyText(),
+          const SizedBox(height: 32),
+          storeButtons(),
+          const SizedBox(height: 32),
+        ],
+      ),
     );
   }
 
   Widget titleText() {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(
           'Organize your day',
           style: TextStyle(
-            fontSize: 88,
+            fontSize: titleFontSize,
             fontWeight: FontWeight.w900,
             height: 0,
           ),
         ),
         Text(
           'and save your favorite moments in one place!',
-          style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+          style: TextStyle(
+              fontSize: subtitleFontSize, fontWeight: FontWeight.bold),
         ),
       ],
     );
   }
 
   Widget bodyText() {
-    return const Column(
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(
           'Simplify your day by effortlessly managing your to-dos,',
           style: TextStyle(
-            fontSize: 18,
+            fontSize: bodyFontSize,
           ),
         ),
         Text(
           'capturing valuable thoughts, ideas, and cherished moments.',
           style: TextStyle(
-            fontSize: 18,
+            fontSize: bodyFontSize,
           ),
         ),
         Text(
           'Organize your digital life with ease.',
           style: TextStyle(
-            fontSize: 18,
+            fontSize: bodyFontSize,
           ),
         ),
       ],
@@ -69,6 +83,7 @@ class HomePageLeftSide extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Theme(
               data: ThemeData(
