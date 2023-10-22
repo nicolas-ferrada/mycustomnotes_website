@@ -1,7 +1,11 @@
 import 'package:flutter/widgets.dart';
 
-class HomePageRightSide extends StatelessWidget {
-  const HomePageRightSide({super.key});
+class HomePageImageSide extends StatelessWidget {
+  final double imageSize;
+  const HomePageImageSide({
+    super.key,
+    required this.imageSize,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -16,17 +20,18 @@ class HomePageRightSide extends StatelessWidget {
 
   Widget images() {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Image.asset(
           'assets/images/small-view.jpg',
           fit: BoxFit.cover,
-          height: 600,
+          height: imageSize,
         ),
         const SizedBox(width: 32),
         Image.asset(
           'assets/images/split-view.jpg',
           fit: BoxFit.cover,
-          height: 600,
+          height: imageSize,
         ),
       ],
     );
