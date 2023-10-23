@@ -2,9 +2,11 @@ import 'package:flutter/widgets.dart';
 
 class HomePageImageSide extends StatelessWidget {
   final double imageSize;
+  final double? imageSeparation;
   const HomePageImageSide({
     super.key,
     required this.imageSize,
+    this.imageSeparation,
   });
 
   @override
@@ -27,7 +29,7 @@ class HomePageImageSide extends StatelessWidget {
           fit: BoxFit.cover,
           height: imageSize,
         ),
-        const SizedBox(width: 32),
+        SizedBox(width: imageSeparation ?? 32),
         Image.asset(
           'assets/images/split-view.jpg',
           fit: BoxFit.cover,
