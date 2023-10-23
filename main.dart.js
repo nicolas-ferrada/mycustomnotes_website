@@ -81048,7 +81048,7 @@ A.a2I.prototype={
 $0(){var s=0,r=A.a_(t.H),q
 var $async$$0=A.a0(function(a,b){if(a===1)return A.X(b,r)
 while(true)switch(s){case 0:s=3
-return A.a3(A.EF(A.dh("",0,null)),$async$$0)
+return A.a3(A.EF(A.dh("https://apps.apple.com/us/app/my-custom-notes/id6469385680?platform=iphone",0,null)),$async$$0)
 case 3:q=b
 s=1
 break
@@ -81059,7 +81059,7 @@ A.a2J.prototype={
 $0(){var s=0,r=A.a_(t.H),q
 var $async$$0=A.a0(function(a,b){if(a===1)return A.X(b,r)
 while(true)switch(s){case 0:s=3
-return A.a3(A.EF(A.dh("",0,null)),$async$$0)
+return A.a3(A.EF(A.dh("https://play.google.com/store/apps/details?id=com.nicolasferrada.mycustomnotes",0,null)),$async$$0)
 case 3:q=b
 s=1
 break
@@ -81068,10 +81068,10 @@ return A.Z($async$$0,r)},
 $S:27}
 A.qU.prototype={
 I(a){var s=null,r=this.c,q=A.xk("assets/images/small-view.jpg",B.kC,r,s),p=this.d,o=t.p
-return A.hx(A.a([A.zh(A.a([q,A.f_(s,s,p==null?32:p),A.xk("assets/images/split-view.jpg",B.kC,r,s)],o),B.a9,B.bJ,B.ai,s),B.LS],o),B.a9,B.bJ,B.ai)}}
+return A.hx(A.a([A.zh(A.a([q,A.f_(s,s,p==null?32:p),A.xk("assets/images/split-view.jpg",B.kC,r,s)],o),B.a9,B.bJ,B.ai,s),B.LR],o),B.a9,B.bJ,B.ai)}}
 A.qV.prototype={
 I(a){var s,r=this,q=null,p=t.p,o=A.hx(A.a([A.ev("Organize your day",q,q,A.iA(q,q,q,q,q,q,q,q,q,q,q,r.c,q,q,B.iq,q,0,!0,q,q,q,q,q,q,q,q),B.aM),A.ev("and save your favorite moments in one place!",q,q,A.iA(q,q,q,q,q,q,q,q,q,q,q,r.d,q,q,B.bE,q,q,!0,q,q,q,q,q,q,q,q),B.aM)],p),B.a9,B.aA,B.ai),n=r.e
-n=A.hx(A.a([A.ev("Simplify your day by effortlessly managing your to-dos,",q,q,A.iA(q,q,q,q,q,q,q,q,q,q,q,n,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),B.aM),A.ev("capturing valuable thoughts, ideas, and cherished moments.",q,q,A.iA(q,q,q,q,q,q,q,q,q,q,q,n,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),B.aM),B.LR,A.ev("Organize your digital life with ease.",q,q,A.iA(q,q,q,q,q,q,q,q,q,q,q,n,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),B.aM)],p),B.a9,B.aA,B.ai)
+n=A.hx(A.a([A.ev("Simplify your day by effortlessly managing your to-dos,",q,q,A.iA(q,q,q,q,q,q,q,q,q,q,q,n,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),B.aM),A.ev("capturing valuable thoughts, ideas, and cherished moments.",q,q,A.iA(q,q,q,q,q,q,q,q,q,q,q,n,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),B.aM),B.LS,A.ev("Organize your digital life with ease.",q,q,A.iA(q,q,q,q,q,q,q,q,q,q,q,n,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),B.aM)],p),B.a9,B.aA,B.ai)
 s=r.f
 return new A.bN(B.CD,A.hx(A.a([o,B.eb,n,B.eb,s===!0?A.hx(A.arZ(a,s),B.a9,B.aA,B.ai):A.zh(A.arZ(a,s),B.a9,B.bJ,B.ai,q),B.eb],p),B.a9,B.bJ,B.ai),q)}}
 A.Ki.prototype={
@@ -86058,8 +86058,8 @@ B.ag=new A.fA(0,0,null,null)
 B.LO=new A.fA(16,null,null,null)
 B.LP=new A.fA(32,null,null,null)
 B.LQ=new A.fA(null,24,null,null)
-B.LR=new A.fA(null,4,null,null)
-B.LS=new A.fA(null,64,null,null)
+B.LR=new A.fA(null,64,null,null)
+B.LS=new A.fA(null,8,null,null)
 B.jH=new A.fA(null,null,null,null)
 B.LT=new A.zQ(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.xv=new A.LU(0,0,0,0,0,0,!1,!1,null,0)
