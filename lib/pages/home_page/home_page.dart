@@ -31,11 +31,11 @@ class _HomePageState extends State<HomePage> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           HomePageTextSide(
-            titleFontSize: 50,
-            subtitleFontSize: 22,
-            bodyFontSize: 16,
+            titleFontSize: 32,
+            subtitleFontSize: 18,
+            bodyFontSize: 14,
           ),
-          HomePageImageSide(imageSize: 400),
+          HomePageImageSide(imageSize: 300),
         ],
       ),
     );
