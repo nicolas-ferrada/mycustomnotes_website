@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'home_page_buttons.dart';
+import 'home_page_youtube.dart';
 
 class HomePageTextSide extends StatelessWidget {
   final double titleFontSize;
@@ -29,6 +30,8 @@ class HomePageTextSide extends StatelessWidget {
           const SizedBox(height: 32),
           storeButtons(context: context),
           const SizedBox(height: 32),
+          const HomePageYoutube(),
+          const SizedBox(height: 64),
         ],
       ),
     );
