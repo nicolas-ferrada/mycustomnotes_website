@@ -45,14 +45,22 @@ class StaticAppbar extends StatelessWidget {
     required Widget child,
     required BuildContext context,
   }) {
+    final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
     return Scaffold(
       body: child,
+      key: scaffoldKey,
       drawer: Drawer(
-        child: ListView(
-          itemExtent: 80,
+        child: ListView.builder(
+          itemCount: 6,
+          itemBuilder: (context, index) {
+            return GestureDetector(
+              onTap: () => scaffoldKey.currentState?.closeDrawer(),
+              child: StaticAppbarActions.actions(context: context)[index],
+            );
+          },
+          itemExtent: 100,
           shrinkWrap: true,
           padding: const EdgeInsets.all(8),
-          children: StaticAppbarActions.actions(context: context),
         ),
       ),
       appBar: AppBar(
@@ -76,19 +84,37 @@ class StaticAppbar extends StatelessWidget {
     required Widget child,
     required BuildContext context,
   }) {
+    final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
     return Scaffold(
+      key: scaffoldKey,
       body: child,
       drawer: Drawer(
-        child: ListView(
+        child: ListView.builder(
+          itemCount: 6,
+          itemBuilder: (context, index) {
+            return GestureDetector(
+              onTap: () => scaffoldKey.currentState?.closeDrawer(),
+              child: StaticAppbarActions.actions(context: context)[index],
+            );
+          },
           itemExtent: 120,
           shrinkWrap: true,
           padding: const EdgeInsets.all(8),
-          children: StaticAppbarActions.actions(context: context),
         ),
       ),
       appBar: AppBar(
-        iconTheme: const IconThemeData(
-          size: 80,
+        leading: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+          child: Transform.scale(
+            scale: 1.5,
+            child: IconButton(
+              icon: const Icon(
+                Icons.menu,
+                size: 40,
+              ),
+              onPressed: () => scaffoldKey.currentState?.openDrawer(),
+            ),
+          ),
         ),
         elevation: 0,
         backgroundColor: Colors.transparent,
