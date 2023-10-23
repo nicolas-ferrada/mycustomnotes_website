@@ -5,71 +5,61 @@ class ContactPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        titlePage(),
-        bodyPage(),
-      ],
-    );
-  }
-
-  Widget bodyPage() {
-    return const Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Text(
-          'Contact information',
-          style: TextStyle(
-            fontSize: 28,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        SizedBox(
-          height: 8,
-        ),
-        Text(
-          'Owner and data controller',
-          style: TextStyle(
-            fontSize: 16,
-          ),
-        ),
-        Text(
-          'Name: Nicolás Ferrada',
-          style: TextStyle(
-            fontSize: 16,
-          ),
-        ),
-        SelectableText(
-          'Email: mycustomnotes@nicolasferrada.com',
-          style: TextStyle(
-            fontSize: 16,
-          ),
-        ),
-        SizedBox(height: 16),
-        Text(
-          'If you have any questions, you can contact us by email.',
-          style: TextStyle(
-            fontSize: 16,
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget titlePage() {
-    return const Padding(
-      padding: EdgeInsets.all(12),
-      child: Align(
-        alignment: Alignment.topCenter,
-        child: Text(
-          'Contact us',
-          style: TextStyle(
-            fontSize: 32,
-            fontWeight: FontWeight.bold,
+    return Center(
+      child: SizedBox(
+        height: 275,
+        width: 400,
+        child: Card(
+          color: const Color(0xFF322D40),
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                title(),
+                const SizedBox(height: 32),
+                body(),
+              ],
+            ),
           ),
         ),
       ),
+    );
+  }
+
+  Widget title() {
+    return const Center(
+      child: Text(
+        'Owner and data controller',
+        style: TextStyle(
+          fontSize: 24,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+    );
+  }
+
+  Widget body() {
+    return const Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text('Name:'),
+        SelectableText(
+          'Nicolás Ferrada',
+        ),
+        SizedBox(height: 16),
+        Text('Email:'),
+        SelectableText(
+          'mycustomnotes@nicolasferrada.com',
+        ),
+        SizedBox(height: 32),
+        Text(
+          'If you have any questions, contact us by email.',
+          style: TextStyle(
+            fontStyle: FontStyle.italic,
+          ),
+        ),
+      ],
     );
   }
 }
