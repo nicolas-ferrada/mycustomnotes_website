@@ -75,6 +75,7 @@ class HomePageTextSide extends StatelessWidget {
             fontSize: bodyFontSize,
           ),
         ),
+        const SizedBox(height: 8),
         Text(
           'Organize your digital life with ease.',
           textAlign: TextAlign.center,
