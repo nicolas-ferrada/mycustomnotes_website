@@ -40,5 +40,7 @@ Developer's website: https://nicolasferrada.com
 
 - Responsive design.
 
+- Splash screen with animation.
+
 ## Major known issues
 The website was developed in record time due to time constraints. The responsive design was not optimized because it is not centralized; instead, it is repeated on every screen that requires it.
