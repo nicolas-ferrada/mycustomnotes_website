@@ -61,10 +61,10 @@ class StaticAppbar extends StatelessWidget {
         ),
         elevation: 0,
         backgroundColor: Colors.transparent,
-        toolbarHeight: 160,
+        toolbarHeight: 90,
         title: const Center(
           child: StaticAppbarLogo(
-            logoSize: 260,
+            logoSize: 180,
             logoLeftPadding: 0,
           ),
         ),
@@ -92,10 +92,10 @@ class StaticAppbar extends StatelessWidget {
         ),
         elevation: 0,
         backgroundColor: Colors.transparent,
-        toolbarHeight: 160,
+        toolbarHeight: 140,
         title: const Center(
           child: StaticAppbarLogo(
-            logoSize: 320,
+            logoSize: 300,
             logoLeftPadding: 0,
           ),
         ),
