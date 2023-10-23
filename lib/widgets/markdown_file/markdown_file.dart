@@ -44,7 +44,7 @@ class MarkdownFile extends StatelessWidget {
   }) {
     return MarkdownFileDocument(
       snapshot: snapshot,
-      horizontalPadding: 40,
+      horizontalPadding: 20,
     );
   }
 
