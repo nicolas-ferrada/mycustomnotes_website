@@ -14,7 +14,10 @@ class HomePageStoreButtons {
         ),
         child: InkWell(
           borderRadius: BorderRadius.zero,
-          onTap: () async => await launchUrl(Uri.parse('')),
+          onTap: () async => await launchUrl(
+            Uri.parse(
+                'https://apps.apple.com/us/app/my-custom-notes/id6469385680?platform=iphone'),
+          ),
           child: Image.asset(
             'assets/images/app-store-badge.png',
             width: (isMobile != null && isMobile == true) ? 195 : 180,
@@ -29,7 +32,10 @@ class HomePageStoreButtons {
         ),
         child: InkWell(
           splashColor: null,
-          onTap: () async => await launchUrl(Uri.parse('')),
+          onTap: () async => await launchUrl(
+            Uri.parse(
+                'https://play.google.com/store/apps/details?id=com.nicolasferrada.mycustomnotes'),
+          ),
           child: Image.asset(
             'assets/images/google-play-badge.png',
             width: 230,
