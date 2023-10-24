@@ -62,7 +62,7 @@ Upon termination, Your right to use the Service will cease immediately.
 
 ## **Limitation of Liability**
 
-You acknowledge and understand that the use of the application is at your own risk. We will not be liable for any loss of information, data, content, for personal injury, loss of privacy, or any direct, indirect, incidental, special, or consequential damages that may result from the use of the Application or the inability to use it. This includes, but is not limited to, loss of data or information caused by service interruptions, errors, omissions, defects, viruses, communication disruptions, content deletions, or any other form of technical or non-technical loss or damage.
+You acknowledge and understand that the use of the application is at Your own risk. We will not be liable for any loss of information, data, content, for personal injury, loss of privacy, or any direct, indirect, incidental, special, or consequential damages that may result from the use of the Application or the inability to use it. This includes, but is not limited to, loss of data or information caused by service interruptions, errors, omissions, defects, viruses, communication disruptions, content deletions, or any other form of technical or non-technical loss or damage.
 
 You agree that You are solely responsible for backing up any information, data, or content You input or store within the application and must take appropriate measures to prevent the loss of such information. Under no circumstances We will be responsible for the recovery of lost or damaged data.
 
