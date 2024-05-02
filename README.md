@@ -44,3 +44,6 @@ Developer's website: https://nicolasferrada.com
 
 ## Major known issues
 The website was developed in record time due to time constraints. The responsive design was not optimized because it is not centralized; instead, it is repeated on every screen that requires it.
+
+## Acknowledgements
+This was my first Flutter website. I had to develop it to comply with some mobile store policies. I am grateful that I had to; it was a really great experience. Completing it in record time was both challenging and rewarding.
